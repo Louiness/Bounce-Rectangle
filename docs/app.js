@@ -8,7 +8,7 @@ class App {
         this.ctx = this.canvas.getContext('2d');
         document.body.appendChild(this.canvas);
 
-        this.rectangle = new Rectangle(100, 100);
+        this.rectangle = new Rectangle(100, 1);
 
         this.resize();
 
@@ -24,7 +24,7 @@ class App {
         this.canvas.height = this.pageHeight * 2;
         this.ctx.scale(2, 2);
 
-        this.rectangle.resize(this.pageWidth, this.pageHeight);
+        this.rectangle.crearteOffset(this.pageWidth, this.pageHeight);
     }
 
     animate(t) {
