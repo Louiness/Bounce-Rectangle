@@ -14,7 +14,7 @@ export class Rectangle {
         const speedY = speed * createDirection();
 
         for(let i = 0; i < numberOfBoxes; i++) {
-            this.boxes.push(new Box(this.offset.x, this.offset.y, speedX, speedY, length, (1 / (numberOfBoxes + 1))));
+            this.boxes.push(new Box(this.offset.x, this.offset.y, speedX, speedY, length, (1 / (i + 1))));
         }
     }
 
